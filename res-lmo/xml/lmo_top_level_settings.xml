@@ -21,14 +21,6 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="top_level_settings">
 
-    <PreferenceCategory
-        android:key="top_level_evolver"
-        android:order="-210"
-        android:icon="@drawable/ic_settings_evolution"
-        android:summary="@string/evolver_dashboard_summary"
-        android:title="@string/evolver_d ashboard_title"
-        android:fragment="com.evolution.settings.EvolutionSettings"
-        settings:controller="com.evolution.settings.TopLevelEvolutionSettingsPreferenceController" />
         
     <PreferenceCategory
         android:order="-205"
@@ -66,7 +58,7 @@
 
     <Preference
         android:key="top_level_display"
-        android:order="-170"
+        android:order="-150"
         android:icon="@drawable/ic_settings_display_white"
         android:summary="@string/display_dashboard_summary"
         android:title="@string/display_settings"
@@ -82,6 +74,15 @@
         android:title="@string/wallpaper_settings_title"
         settings:layout="@layout/lmo_dashboard_preference_middle"
         settings:controller="com.android.settings.display.TopLevelWallpaperPreferenceController"/>
+
+    <Preference
+        android:key="top_level_evolver"
+        android:order="-210"
+        android:icon="@drawable/ic_settings_evolution"
+        android:summary="@string/evolver_dashboard_summary"
+        android:title="@string/evolver_dashboard_title"
+        android:fragment="com.evolution.settings.EvolutionSettings"
+        settings:controller="com.evolution.settings.TopLevelEvolutionSettingsPreferenceController" />
 
     <Preference
         android:key="top_level_sound"
