@@ -63,11 +63,10 @@ android_library {
     aaptflags: ["--extra-packages com.evolution.settings"],
 
     resource_dirs: [
-        "res",        
+        "res",  
+        "res-lmo",      
         "Evolver/res",
         "TouchGestures/res"
-        "res-lmo",
-    "TouchGestures/res"
     ],
 
     static_libs: [
